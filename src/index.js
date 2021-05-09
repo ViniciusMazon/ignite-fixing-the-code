@@ -32,7 +32,7 @@ app.put('/repositories/:id', (request, response) => {
   const { id } = request.params;
   const updatedRepository = request.body;
 
-  repositoryIndex = repositories.findindex(
+  repositoryIndex = repositories.findIndex(
     (repository) => repository.id === id
   );
 
